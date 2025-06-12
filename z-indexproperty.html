@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+.box1 {
+    background-color: blue;
+  position: relative;
+  z-index: 1;
+  width:400px;
+
+  height: 400px;
+}
+
+.box2 {
+  position:absolute;
+  z-index: 2;
+  background-color: pink;
+  width: 200px;
+  left: 100px;
+  top:100px;
+  height: 200px;
+
+}
+.box3{
+  position:absolute;
+  z-index: 3;
+  background-color: yellow;
+  width: 100px;
+  left: 200px;
+  top:200px;
+  height: 100px;
+transform: translate(-50%,-50%);
+}
+
+#overtest{
+    width:900px;
+    height: 100px;
+    border:3px solid black;
+/* overflow: hidden; */
+/* overflow: clip; */
+/* overflow:scroll; */
+overflow: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flexitem {
+  border: 3px solid black;
+  margin: 10px;
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+/* .flexitem1 {
+  min-width: 100px;
+} */
+ .container{
+    display: grid;
+  grid-template-columns:auto auto auto;
+   padding: 10px;
+ }
+ .grid{
+      
+   background-color:blue;
+  border: 1px solid black;
+  padding: 20px;
+   margin: 5px;
+ }
+ .anim{
+    width: 200px;
+    height: 200px;
+    background: orange;
+    animation-name:examples;
+    animation-duration: 8s;
+ }
+ @keyframes examples{
+    0%{background-color: red;}
+      25%{background-color: pink;}
+        50%{background-color: green;}
+          75%{background-color: blue;}
+            100%{background-color: black;}
+ }
+</style>
+</head>
+<body>
+  <div class="box1">
+  <div class="box2"></div>
+  <div class="box3"></div>
+</div></div>
+
+<div id="overtest">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et accusantium alias est quia fugiat id iusto repellendus molestiae. Deserunt consequuntur nisi illo ipsum in! Minima numquam sapiente labore facere ipsa?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptates provident porro, incidunt laudantium rem officia exercitationem dolore, quia perspiciatis cumque error est distinctio aut inventore et itaque alias
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et sequi asperiores magnam temporibus adipisci aperiam doloremque. Magnam sit, consectetur vero provident cum, incidunt omnis debitis dolorum aspernatur amet numquam.
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis tenetur exercitationem totam, qui ratione facilis? Saepe, asperiores exercitationem neque provident esse ratione veritatis quod reiciendis ad laborum a quidem expedita?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et unde laborum fugit quia quidem veniam laboriosam sit vero mollitia praesentium dicta, accusantium nobis temporibus enim accusamus repudiandae omnis. Non, quam?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, labore consequatur. Nulla voluptatibus dignissimos, enim velit provident perferendis debitis architecto quos eum ea id ad? Beatae id reiciendis animi debitis!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, sint modi, sapiente officiis ipsum laboriosam et blanditiis magnam necessitatibus, quae non? Obcaecati pariatur error autem nesciunt atque, dolorem nisi quo?
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit hic odit a! Eum non pariatur, quidem deserunt reprehenderit magnam facilis quis repellendus neque maiores ut dolorum iusto voluptas commodi illum.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur blanditiis suscipit nesciunt, adipisci eos debitis quam provident sapiente? Voluptas veniam iste facilis eos saepe aut quibusdam veritatis odit necessitatibus excepturi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat illo vel nobis sed veritatis aliquid incidunt! Minus provident quaerat impedit perferendis velit deleniti eius, asperiores laborum, mollitia delectus ullam.
+</div>
+
+<div class="flex-container">
+  <div class="flexitem flexitem1"></div>
+  <div class="flexitem flexitem1"></div>
+  <div class="flexitem flexitem1"></div>  
+</div>
+<div class="container">
+    <div class="grid"></div>
+    <div class="grid"></div>
+    <div class="grid"></div>
+</div>
+<div class="anim"></div>
+  </body>
+</html>
