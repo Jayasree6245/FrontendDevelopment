@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+     box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff8dc;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 40px;
+    color: darkslategray;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#h31:hover {
+    color: brown;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+label {
+    color: indianred;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-style: oblique;
+    background-color: white;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: indianred;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+    
+}
+
+th {
+    text-align: center;
+    padding-bottom: 10px;
+}
+ input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            font-style: oblique;
+    </style>
+</head>
+<body><center>
+    <h1 font-size="70px"><b>Forms</b></h1><table>
+<form action="index.html" method="get">
+   <tr><th colspan=2> <h1 id="h31"><b>Registration Form</b></h1></th></tr>
+    <tr><td><label for="name">Enter Your Name:</label></td>
+    <td><input type="text"></td></tr>
+   <tr><td> <label for="HTNO">Hall Ticket Number:</label></td>
+    <td><input type="text"></td></tr>
+    <tr><td><label for="Branch">Branch:</label></td>
+<td>    <select name="Branch" id="Branch">
+        <option value="--Select--">--Select--</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="CSM">CSM</option>
+        <option value="CSD">CSD</option>
+        <option value="MECH">MECH</option>
+        <option value="CIVIL">CIVIL</option>
+    </select></td></tr>
+    <tr><td><label for="dob">Date of Birth:</label></td>
+    <td><input type="date"></td></tr>
+    <tr><td><label for="Age">Age:</label></td>
+    <td><input type="number"></td/tr>
+<tr><td>    <label for="Phone">Phone Number:</label></td>
+<td>    <input type="tel"></td></tr>
+    <tr><td><label for="email">Email</label></td>
+<td>    <input type="email"></td></tr>
+   <tr><td> <label for="password">Password:</label></td>
+<td>    <input type="password"></td></tr>
+<tr><td>    <label for="confirm-password">Confirm-Password</label></td>
+<td>    <input type="password"></td></tr>
+<tr><td>    <label for="img">Insert Your Image</label></td>
+<td>    <input type="file"></td></tr>
+<tr><td colspan=2><center><input type="submit"></center></td>
+</tr>
+</form>
+</table>
+</center>
+</body>
+</html>
